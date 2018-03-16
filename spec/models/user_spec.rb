@@ -6,5 +6,7 @@ RSpec.describe User, type: :model do
 
   # ensure it validates username
   it { should validate_presence_of(:username) }
+  it { should validate_presence_of(:email) }
+  it { should validate_presence_of(:password_digest) }
 
 end
